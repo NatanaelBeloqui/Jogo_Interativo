@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-lateral {
+  width: 200px;
+  background-color: #004A99;
+  color: white;
+  padding: 20px;
+}
+
+.menu-lateral .logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: white;
+  color: #004A99;
+  border: none;
+  cursor: pointer;
+}
+
+.principal {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#jogo {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #f4f4f4;
+  border: 2px dashed #ccc;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.item {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#pontuacao {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}

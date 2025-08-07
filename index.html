@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo SENAC - Pegue os Itens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="menu-lateral">
+      <img src="assets/senac-logo.png" alt="Logo SENAC" class="logo">
+      <h2>Menu</h2>
+      <ul>
+        <li><button onclick="mostrarDashboard()">Dashboard</button></li>
+        <li><button onclick="logout()">Logout</button></li>
+      </ul>
+    </aside>
+
+    <main class="principal">
+      <header class="topo">
+        <h1>Jogo Interativo SENAC</h1>
+        <span id="nomeUsuario"></span>
+      </header>
+
+      <section id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="nome" placeholder="Nome completo">
+        <input type="text" id="telefone" placeholder="Telefone">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="fazerLogin()">Entrar</button>
+      </section>
+
+      <section id="jogoSection" class="oculto">
+        <div id="pontuacao">Pontuação: 0</div>
+        <div id="jogo"></div>
+      </section>
+
+      <section id="dashboardSection" class="oculto">
+        <h2>Dashboard</h2>
+        <p>Total de pontos ganhos: <span id="totalPontos"></span></p>
+        <p>Itens clicados: <span id="itensClicados"></span></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
